@@ -1,5 +1,5 @@
 ﻿$webParsingFolderPath = "$PSScriptRoot\WebParsing"
-$confConfig = "$PSScriptRoot\conferences.xml"
+$confConfig = "$PSScriptRoot\conferences.json"
 
 Set-StrictMode -Version Latest
 
@@ -21,9 +21,39 @@ function Get-ConferenceConfiguration
 	process {
 		try
 		{
-			$ConfDetails = [xml](Get-Content -Path $confConfig)
-			$url = ($ConfDetails | Select-Xml -XPath "//Conference[@Name='$Name']").Node.Url
-			[pscustomobject]@{ 'Conference' = $Name; 'URL' = $url}
+			$json = Get-Content -Path $confConfig -Raw | ConvertFrom-Json
+			$json.conferences.Where({ $_.Name -eq $Name })
+		}
+		catch
+		{
+			Write-Error $_.Exception.Message
+		}
+	}
+}
+
+function Add-ConferenceConfiguration
+{
+	[CmdletBinding()]
+	param
+	(
+		[Parameter(Mandatory)]
+		[ValidateNotNullOrEmpty()]
+		[pscustomobject]$InputObject
+			
+	)
+	begin {
+		$ErrorActionPreference = 'Stop'
+	}
+	process {
+		try
+		{
+			$jsonKeyValues = @()
+			$InputObject.PSObject.Properties | foreach {
+				$jsonKeyValues += '"{0}":"{1}"' -f $_.Name,$_.Value
+			}
+			
+			$jsonBlock = "{$($jsonKeyValues -join ',')}"
+				
 		}
 		catch
 		{
@@ -111,7 +141,9 @@ function New-Conference
 			}"
 			Add-Content -Path "$PSScriptRoot\$Name.ps1" -Value $templateScript
 			
-			## Add to the XML file
+			## Add to the JSON file
+			
+			
 		}
 		catch
 		{
