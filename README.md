@@ -25,5 +25,5 @@ If you see a conference not supported or without an Issue, add it to the [Confer
 
 #Supported Conferences (as of 10/19/15)
 
-1. PhreakNic
-2. IT Computing Cloud Conference
+1. [PhreakNic](http://phreaknic.info)
+2. [IT Computing Cloud Conference](http://icee3.com)
