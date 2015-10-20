@@ -11,7 +11,7 @@ If you know PowerShell, are a whiz with Invoke-WebRequest and can navigate the D
 Here's how you can contribute to help make this the one-stop shop for up-to-date conference information:
 
 ## The Most Helpful Way
-1. Pick a conference script that's needed in the [Issues](https://github.com/adbertram/ConferenceSeeker/issues) with a tag of `help wanted`.
+1. Pick a conference script that's needed in the [Issues](https://github.com/adbertram/ConferenceSeeker/issues) with a tag of `help wanted` or create an issue yourself and build the script.
 2. Check out the [_ConferenceTemplate.ps1 script](https://github.com/adbertram/ConferenceSeeker/blob/master/WebParsing/_ConferenceTemplate.ps1) script in the WebParsing folder.
 3. Do whatever you have to to pull out the conference's start and end dates.
 4. Output the start and end dates in a hashtable with key names of `Start` and `End` and `[datetime]` objects as the dates into the ConferenceTemplate script.
