@@ -3,7 +3,6 @@
 	[ValidateNotNullOrEmpty()]
 	[Microsoft.PowerShell.Commands.HtmlWebResponseObject]$WebResponse
 )
-$webResponse = Invoke-WebRequest -Uri $confInfo.Url
 
 [int]$year = $webResponse.ParsedHtml.body.getElementsByClassName('chefconf-title')[0].innerText.split(' ')[1]
 $roughdates = $webResponse.ParsedHtml.body.getElementsByClassName('date')[0].innerText.Split('|')[1].Trim()
