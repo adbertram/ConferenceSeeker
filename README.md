@@ -15,6 +15,7 @@ Here's how you can contribute to help make this the one-stop shop for up-to-date
 2. Check out the [_ConferenceTemplate.ps1 script](https://github.com/adbertram/ConferenceSeeker/blob/master/WebParsing/_ConferenceTemplate.ps1) script in the WebParsing folder.
 3. Do whatever you have to to pull out the conference's start and end dates.
 4. Output the start and end dates in a hashtable with key names of `Start` and `End` and `[datetime]` objects as the dates into the ConferenceTemplate script.
+5. Add the conference to the [Conferences JSON configuration file](https://github.com/adbertram/ConferenceSeeker/blob/master/Conferences.json).
 5. Update the README to add the supported conference and update the "as of date".
 5. Submit a pull request with your new conference script.
 6. Get your pull request accepted.
