@@ -1,5 +1,6 @@
 {"conferences":[
     {"Name":"PhreakNic","URL":"http://www.phreaknic.info"},
     {"Name":"IT Cloud Computing Conference","URL":"http://www.icee3.com"},
-	{"Name":"PowerShell and DevOps Global Summit","URL":"https://eventloom.com/event/home/PSNA16"}
+    {"Name":"PowerShell and DevOps Global Summit","URL":"https://eventloom.com/event/home/PSNA16"},
+    {"Name":"DockerConUS","URL":"https://blog.docker.com/2015/10/dockercon-us-2016/"}
 ]}
