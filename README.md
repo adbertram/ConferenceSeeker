@@ -30,3 +30,4 @@ If you see a conference not supported or without an Issue, add it to the [Confer
 2. [IT Computing Cloud Conference](http://icee3.com)
 3. [DockerConUS](https://blog.docker.com/2015/10/dockercon-us-2016/)
 4. [ChefConf](https://www.chef.io/chefconf)
+5. [PowerShell Conference Europe](http://www.psconf.eu/)
