@@ -94,7 +94,7 @@ function Get-Conference
 				$confScript = "$webParsingFolderPath\$Name.ps1"
 				$conf = [ordered]@{ 'Conference' = $Name }
 				Write-Verbose -Message "Getting conference information for conference [$($Name)] using URL [$($confInfo.Url)]"
-				$conf += (& $confScript -WebResponse $webResponse)
+				$conf += & $confScript
 				[pscustomobject]$conf
 			}
 			else

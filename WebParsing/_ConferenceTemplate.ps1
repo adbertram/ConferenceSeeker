@@ -1,10 +1,4 @@
-﻿param (
-	[Parameter(Mandatory)]
-	[ValidateNotNullOrEmpty()]
-	[Microsoft.PowerShell.Commands.HtmlWebResponseObject]$WebResponse
-)
-
-###############
+﻿###############
 ## Insert code to create two datetime objects (Start and End) here
 ###############
 
