@@ -25,10 +25,12 @@ Here's how you can contribute to help make this the one-stop shop for up-to-date
 
 If you see a conference not supported or without an Issue, add it to the [ConferenceSeeker Wiki](https://github.com/adbertram/ConferenceSeeker/wiki/Conference-Scripts-You-Haven%27t-Got-an-Issue-for-Yet/_edit) and let us know!
 
-#Supported Conferences (as of 10/20/15)
+#Supported Conferences (as of 10/24/15)
 
 1. [PhreakNic](http://phreaknic.info)
 2. [IT Computing Cloud Conference](http://icee3.com)
 3. [DockerConUS](https://blog.docker.com/2015/10/dockercon-us-2016/)
 4. [ChefConf](https://www.chef.io/chefconf)
 5. [PowerShell Conference Europe](http://www.psconf.eu/)
+6. [VMWorldUS](https://www.vmworld.com/en/pre-register.html)
+7. [VMWorldEU](https://www.vmworld.com/en/pre-register.html)
