@@ -3,5 +3,7 @@
     {"Name":"IT Cloud Computing Conference","URL":"http://www.icee3.com"},
     {"Name":"DockerConUS","URL":"https://blog.docker.com/2015/10/dockercon-us-2016/"},
     {"Name":"ChefConf","URL":"https://www.chef.io/chefconf"},
-	{"Name":"PowerShell Conference Europe","URL":"http://www.psconf.eu"}
-]}
+	  {"Name":"PowerShell Conference Europe","URL":"http://www.psconf.eu"},
+    {"Name":"VM World US 2016","URL":"https://www.vmworld.com/en/pre-register.html"},
+    {"Name":"VM World Europe 2016","URL":"https://www.vmworld.com/en/pre-register.html"}
+ ]}
