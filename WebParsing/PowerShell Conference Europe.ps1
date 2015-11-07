@@ -1,10 +1,7 @@
-$DateString = (($WebResponse.Content -split '<p>When: <em>')[1] -split '</em>')[0]
-$Year = [regex]::Match($DateString,'\d{4}')[0].value
-$Month = ($DateString -split ' ')[0]
-$Days = [regex]::Matches($DateString,' \d?\d[a-z]') | ForEach-Object { $_.Value -replace '[^\d]'}
-
+$Dates = Select-String -InputObject $WebResponse.Content -Pattern '(\d?\d\.\d?\d\.\d{4})' -AllMatches | % { $_.Matches.value }
+$culture = New-Object system.globalization.cultureinfo 'en-gb'
 
 @{
-	'Start' = [datetime] "$Year-$Month-$($Days[0])"
-	'End' = [datetime] "$Year-$Month-$($Days[1])"
+	'Start' = [datetime]::Parse($Dates[0],$culture)
+	'End' = [datetime]::Parse($Dates[1],$culture)
 }
